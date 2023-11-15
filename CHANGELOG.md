@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Version 0.0.5
+## Version 1.0.0
 Initial Release
 ### Features
 - Added CHANGELOG.md
