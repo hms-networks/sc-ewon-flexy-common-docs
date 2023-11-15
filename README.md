@@ -8,6 +8,8 @@ A `ScDocusaurusConfig.js` must exists in the `web-docs` directory and must match
 
 ## Example Usage
 
+### docusaurus.config.js
+
 Example `module.exports` `plugins` section of `docusaurus.config.js`.
 
 ```js
