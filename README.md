@@ -11,31 +11,31 @@ A `ScDocusaurusConfig.js` must exists in the `web-docs` directory and must match
 Example `module.exports` `plugins` section of `docusaurus.config.js`.
 
 ```js
-plugins: [
-  [
+  // Plugins
+  plugins: [
+    [
       "docusaurus-plugin-remote-content",
       {
-          // options here
-          name: "imported-docs", // used by CLI, must be path safe
-          sourceBaseUrl: "https://raw.githubusercontent.com/hms-networks/sc-ewon-flexy-common-docs/main/docs/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-          outDir: "docs/imported", // the base directory to output to.
-          documents: [
-            "setup/_configuration.mdx",
-            "setup/_installation_or_upgrade.mdx",
-            "sys_req/_sys_req_ewon_fw.mdx",
-            "sys_req/_sys_req_java.mdx",
-            "sys_req/_sys_req_maven.mdx",
-          ], // the file names to download
+        // Imported documents
+        name: "imported-docs",
+        sourceBaseUrl: ScDocusaurusConfig.commonDocsRepoUrl + 'docs/',
+        outDir: "docs/imported",
+        documents: [
+          "setup/_configuration.mdx",
+          "setup/_installation_or_upgrade.mdx",
+          "sys_req/_sys_req_ewon_fw.mdx",
+          "sys_req/_sys_req_java.mdx",
+          "sys_req/_sys_req_maven.mdx",
+        ],
       },
-
-  ],
-  [
-    "docusaurus-plugin-remote-content",
-    {
-        // options here
-        name: "imported-images", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/hms-networks/sc-ewon-flexy-common-docs/main/img", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "static/img/imported", // the base directory to output to.
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        // Imported images
+        name: "imported-images",
+        sourceBaseUrl: ScDocusaurusConfig.commonDocsRepoUrl + 'img',
+        outDir: "static/img/imported",
         documents: [
           "ewon/pages/ewon-tag-config-page-hist-logging.webp",
           "ewon/pages/ewon-web-page-home.webp",
@@ -44,22 +44,22 @@ plugins: [
           "github/github-code-btn-download-zip.webp",
           "graphics/green-check-icon-cc0v1.webp",
           "hms/hms-logo-rgb.webp"
-        ], // the file names to download
+        ],
         requestConfig: { responseType: "arraybuffer" }
       }
-  ],
-  [
-    "docusaurus-plugin-remote-content",
-    {
-        // options here
-        name: "imported-js", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/hms-networks/sc-ewon-flexy-common-docs/main/js", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "src/components/imported", // the base directory to output to.
+    ],
+    [
+      "docusaurus-plugin-remote-content",
+      {
+        // Imported javascript
+        name: "imported-js",
+        sourceBaseUrl: ScDocusaurusConfig.commonDocsRepoUrl + 'js',
+        outDir: "src/components/imported",
         documents: [
-          "popover.js",
-          "highlight.js"
-        ], // the file names to download
+          "highlight.js",
+          "popover.js"
+        ],
       }
-  ]
-],
+    ]
+  ],
 ```
