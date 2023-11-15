@@ -66,6 +66,10 @@ Example `module.exports` `plugins` section of `docusaurus.config.js`.
   ],
 ```
 
+#### Note
+
+`ScDocusaurusConfig.js` must contain `commonDocsRepoUrl`.
+
 ### .gitignore
 
 Add the following to the .gitignore file in the `web-docs` folder. If a .gitignore file does not exist at this location, one should be created.
