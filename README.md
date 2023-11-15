@@ -63,3 +63,14 @@ Example `module.exports` `plugins` section of `docusaurus.config.js`.
     ]
   ],
 ```
+
+### .gitignore
+
+Add the following to the .gitignore file in the `web-docs` folder. If a .gitignore file does not exist at this location, one should be created.
+
+```
+# Auto-downloaded common docs
+docs/imported
+static/img/imported
+src/components/imported
+```
