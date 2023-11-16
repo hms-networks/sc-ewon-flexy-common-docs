@@ -25,6 +25,7 @@ Example `module.exports` `plugins` section of `docusaurus.config.js`.
         documents: [
           "setup/_configuration.mdx",
           "setup/_installation_or_upgrade.mdx",
+          "setup/config_values/_maxHistoricalBufferFallBehindMins.mdx",
           "sys_req/_sys_req_ewon_fw.mdx",
           "sys_req/_sys_req_java.mdx",
           "sys_req/_sys_req_maven.mdx",
