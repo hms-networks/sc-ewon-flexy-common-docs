@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Version x.y.z
+### Features
+- Added _vs_code.mdx
+
 ## Version 1.0.0
 Initial Release
 ### Features

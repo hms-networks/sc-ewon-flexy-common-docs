@@ -28,6 +28,7 @@ Example `module.exports` `plugins` section of `docusaurus.config.js`.
           "sys_req/_sys_req_ewon_fw.mdx",
           "sys_req/_sys_req_java.mdx",
           "sys_req/_sys_req_maven.mdx",
+          "dev/_vs_code.mdx",
         ],
       },
     ],
